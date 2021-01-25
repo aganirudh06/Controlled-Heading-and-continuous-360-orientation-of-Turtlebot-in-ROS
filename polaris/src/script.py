@@ -38,8 +38,6 @@ def turtlemove():
     #Defining scope of the variables as global
     global switch
     global goal_angle
-    global goal_x
-    global goal_y
     global x_gain
     global y_gain
     global desired_velocity
@@ -75,7 +73,7 @@ def turtlemove():
     #Switch Case 1
     elif switch ==1:
 
-	#Calculating and defining the error between current heading and desired heading (radians) and current (x,y) and desired (x,y) (m,m)
+	#Calculating and defining the error between current heading and desired heading (radians)
 	error_angle = (goal_angle)-(yaw)
 	
         #P controller for maintaing the desired heading and moving the turtlebot forward at a desired velocity 
